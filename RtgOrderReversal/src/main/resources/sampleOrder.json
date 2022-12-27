@@ -1,0 +1,261 @@
+{
+    "_id": "0b6d8155-f4c9-49f3-b689-c0e4a02fd655",
+    "authorized": true, // not found in order.json
+    "isPickup": false,
+    "isExpress": false,
+    "submitted": true,
+    "shouldCombineUPSWithTruck": true,
+    "doorwayDelivery": false,
+    "doorwayDeliveryPossible": true,
+    "emailSubscribed": false,
+    "lineItems": [
+        {
+            "warrantyEnabled": true,
+            "uvSequenceNumber": [],     // *** empty array - not used remove
+            "isStoreSku": false,        // only showing here, but not in promtions.lineItems
+            "sku": "1366496P",
+            "quantity": 1,
+            "unitPrice": 2295,
+            "title": "Cindy Crawford Home Beachside Walk Blue Denim 5 Pc Living Room",
+            "deliveryType": "D",
+            "category": "livingroom",
+            "on_promotion": true,       // no camel case here...
+            "childItems": [
+                {
+                    "sku": "10169212",
+                    "quantity": 1,
+                    "price": "915.71",
+                    "title": "HMRI 6495XA-03 SOFA",
+                    "warrantyPrice": {
+                        "price": 91.57,
+                        "provider_name": "FORTEGRA",
+                        "plan_name": "RTGLOSPOSOLGI3Y12D"
+                    }
+                },
+                {
+                    "sku": "10269214",
+                    "quantity": 1,
+                    "price": "821.38",
+                    "title": "HMRI 6495XA-02 LOVESEAT",
+                    "warrantyPrice": {
+                        "price": 82.15,
+                        "provider_name": "FORTEGRA",
+                        "plan_name": "RTGLOSPOSOLGI3Y12D"
+                    }
+                },
+                {                           // this record does not have the warrantyPrice object.
+                    "sku": "18992239",  
+                    "quantity": 2,
+                    "price": "57.38",
+                    "title": "HMRI 9223-TP PILLOW PAIR"
+                },
+                {
+                    "sku": "22115996",
+                    "quantity": 1,
+                    "price": "187.04",
+                    "title": "SPOL 159934-01 RECT COCKTAIL TABLE",
+                    "warrantyPrice": {
+                        "price": 18.71,
+                        "provider_name": "FORTEGRA",
+                        "plan_name": "RTGLOSPOSOLGI3Y12D"
+                    }
+                },
+                {
+                    "sku": "23015995",
+                    "quantity": 2,
+                    "price": "128.06",
+                    "title": "SPOL 159934-04 END TABLE",
+                    "warrantyPrice": {
+                        "price": 12.8,
+                        "provider_name": "FORTEGRA",
+                        "plan_name": "RTGLOSPOSOLGI3Y12D"
+                    }
+                }
+            ],
+            "warrantyPrice": {    // this record naming convention is different, not using uderscore e.g. provider_name
+                "price": 218.03,
+                "provider": "FORTEGRA",             //not using uderscore
+                "planName": "RTGLOSPOSOLGI3Y12D"    //not using uderscore
+            }
+        }
+    ],
+    "createdAt": { // new order.json is now a string, ???
+        "$date": "2021-09-01T15:27:59.471Z"
+    },
+    "lastModified": {  // changed in order.json
+        "$date": "2021-09-01T15:29:12.248Z"
+    },
+    "__v": 5,
+    "calendarType": "daily",
+    "dDeliveryCharge": 0,
+    "division": "FL",
+    "doorwayDeliveryCharge": 49.99,
+    "kDeliveryCharge": 0,
+    "paymentInfo": [
+        {
+            "authorized": true,
+            "paymentType": "CYBERV3",
+            "paymentProperties": {
+                "token": "eyJraWQiOiIwOHZlbUltRlV1b1FqQlZoMGdZZEpVWm1NNURHNFNCeiIsImFsZyI6IlJTMjU2In0.eyJkYXRhIjp7ImV4cGlyYXRpb25ZZWFyIjoiMjAyNCIsIm51bWJlciI6IjQxMTExMVhYWFhYWDExMTEiLCJleHBpcmF0aW9uTW9udGgiOiIwMSIsInR5cGUiOiIwMDEifSwiaXNzIjoiRmxleC8wOCIsImV4cCI6MTYzMDUxMTA0MSwidHlwZSI6Im1mLTAuMTEuMCIsImlhdCI6MTYzMDUxMDE0MSwianRpIjoiMUUzQTI2OEtMV0hUQkpaUlM2U1VSR1NBWjdHWTNTQ1hVU0dSTkFHTjRKSkdXVDdHQzhCQTYxMkY5RkMxNzQ0QiIsImNvbnRlbnQiOnsicGF5bWVudEluZm9ybWF0aW9uIjp7ImNhcmQiOnsiZXhwaXJhdGlvblllYXIiOnsidmFsdWUiOiIyMDI0In0sIm51bWJlciI6eyJtYXNrZWRWYWx1ZSI6IlhYWFhYWFhYWFhYWDExMTEiLCJiaW4iOiI0MTExMTEifSwic2VjdXJpdHlDb2RlIjp7fSwiZXhwaXJhdGlvbk1vbnRoIjp7InZhbHVlIjoiMDEifSwidHlwZSI6eyJ2YWx1ZSI6IjAwMSJ9fX19fQ.WUKsijk2uv7CgGIiPSlDdsyir8MidJY2xiGmK6rUbFIQ6QLmfxqOkvc19xj0Abvr750Wyf173Cgbhn0UM3jhQIM2R6Nm81GZy1iLLPKq1B3LB3OQJ5LePAkPty7ZheH_SLRjo6_Tm0_I5Iaanbh6IXRTi0LruBHpkAu1gSnXHMQadyOIt7y5Xcuy2hPOeKS47cJWBQ0Pqti_BQFAV5YYzMxZWPH0NwMk4HPstebs7wK-ZXxRQRfdCt9AHhqpX3cXXES34k320LtSM5L5YZj1wahsaQ3P3gUOfu8-g3Gias0w0nyXAU1F_QL9ZCaXOB6kh-cRYMZnTra2lFzOaLFoOQ",
+                "card": {
+                    "cardName": "visa", // defined here but not elsewhere
+                    "cardType": "001"
+                },
+                "body": {
+                    "merchantReferenceCode": "0b6d8155-f4c9-49f3-b689-c0e4a02fd655",
+                    "requestID": "6305101480706858704004",
+                    "decision": "ACCEPT",
+                    "reasonCode": 100,
+                    "requestToken": "Axj/7wSTVczcRtfxwlyEABEg3ZuGzVg3YwqjCXWgyoqiOKDtelQFRHFB2vSukE4vIYm5DJpJl6MVvzaMCcmq5m4ja/jhLkIAYhcu",
+                    "purchaseTotals": {
+                        "currency": "USD"
+                    },
+                    "ccAuthReply": {
+                        "reasonCode": 100,
+                        "amount": "2862.75",
+                        "authorizationCode": "888888",
+                        "avsCode": "X",
+                        "avsCodeRaw": "I1",
+                        "paymentNetworkTransactionID": "123456789619999",
+                        "authorizedDateTime": "2021-09-01T15:29:08Z",
+                        "processorResponse": "100",
+                        "reconciliationID": "73865071BT0KVAJE"
+                    },
+                    "afsReply": {
+                        "reasonCode": 100,
+                        "consumerLocalTime": "11:29:08",
+                        "scoreModelUsed": "default",
+                        "afsResult": 47,
+                        "cardBin": "411111",
+                        "binCountry": "US",
+                        "cardAccountType": "Visa Gold",
+                        "cardScheme": "VISA CREDIT",
+                        "cardIssuer": "RIVER VALLEY CREDIT UNION"
+                    },
+                    "card": {
+                        "cardType": "001" // not defining cardName  field here
+                    },
+                    "recurringSubscriptionInfo": {
+                        "subscriptionID": "6305101480706858704004"
+                    }
+                },
+                "reasonCode": 100,
+                "status": "success"
+            },
+            "authorizedAmount": 2862.75
+        }
+    ],
+    "pickupWarehouse": "FL99",
+    "promotions": {
+        "cartTotal": 2295,
+        "listPriceTotal": 2639.93,
+        "salePriceTotal": 2295,
+        "bonusBuyTotal": 0,
+        "totalSavings": 0,
+        "lineItems": [
+            {
+                "sku": "1366496P",
+                "quantity": 1,
+                "unitPrice": 2295,
+                "title": "Cindy Crawford Home Beachside Walk Blue Denim 5 Pc Living Room",
+                "deliveryType": "D",
+                "category": "livingroom",
+                "uvSequenceNumber": [], // not showing up in order.json
+                "type": "room",
+                "on_promotion": true,
+                "childItems": [
+                    {
+                        "sku": "10169212",
+                        "quantity": 1,
+                        "price": "915.71",
+                        "title": "HMRI 6495XA-03 SOFA",
+                        "warrantyPrice": {
+                            "price": 91.57,
+                            "provider_name": "FORTEGRA", // looks this is a typo?
+                            "plan_name": "RTGLOSPOSOLGI3Y12D"
+                        }
+                    },
+                    {
+                        "sku": "10269214",
+                        "quantity": 1,
+                        "price": "821.38",
+                        "title": "HMRI 6495XA-02 LOVESEAT",
+                        "warrantyPrice": {
+                            "price": 82.15,
+                            "provider_name": "FORTEGRA",
+                            "plan_name": "RTGLOSPOSOLGI3Y12D"
+                        }
+                    },
+                    {
+                        "sku": "18992239",
+                        "quantity": 2,
+                        "price": "57.38",
+                        "title": "HMRI 9223-TP PILLOW PAIR"
+                    },
+                    {
+                        "sku": "22115996",
+                        "quantity": 1,
+                        "price": "187.04",
+                        "title": "SPOL 159934-01 RECT COCKTAIL TABLE",
+                        "warrantyPrice": {
+                            "price": 18.71,
+                            "provider_name": "FORTEGRA",
+                            "plan_name": "RTGLOSPOSOLGI3Y12D"
+                        }
+                    },
+                    {
+                        "sku": "23015995",
+                        "quantity": 2,
+                        "price": "128.06",
+                        "title": "SPOL 159934-04 END TABLE",
+                        "warrantyPrice": {
+                            "price": 12.8,
+                            "provider_name": "FORTEGRA",
+                            "plan_name": "RTGLOSPOSOLGI3Y12D"
+                        }
+                    }
+                ],
+                "warrantyEnabled": true,
+                "warrantyPrice": {
+                    "price": 218.03,
+                    "provider": "FORTEGRA",
+                    "planName": "RTGLOSPOSOLGI3Y12D"
+                }
+            }
+        ],
+        "promotions": [],           // empty array
+        "amountPromotions": []      // empty array
+    },
+    "subtotal": 2513.03,
+    "subtotalWithDelivery": 2663.02,
+    "tentativeDeliveryCharge": 149.99,
+    "total": 2862.75,
+    "totalDeliveryCharge": 149.99,
+    "contact": {
+        "firstName": "deepan",
+        "lastName": "s",
+        "email": "dchakravarthy@roomstogo.com",
+        "phone": "8136273707",
+        "altPhone": ""
+    },
+    "deliveryDate": "2021-09-07",
+    "deliveryTexts": true,
+    "distributionIndex": 1,
+    "emailCampaign": false,
+    "expressCalendar": [
+        "2021-09-04"
+    ],
+    "expressDeliveryDate": "2021-09-04",
+    "shippingAddress": {
+        "address1": "1821 w brandon blvd",
+        "address2": "",
+        "city": "brandon",
+        "state": "fl",
+        "zip": "33511",
+        "country_code": "US",
+        "addressLookupSuccess": true,
+        "globalAddressId": "aWQ9MTgyMSBXIEJyYW5kb24gQmx2ZCwgQnJhbmRvbiBGTCAzMzUxMSwgVW5pdGVkIFN0YXRlcyBPZiBBbWVyaWNhfmFsdF9rZXk9fDE4MjEgVyBCcmFuZG9uIEJsdmR8fEJyYW5kb24sRkwsMzM1MTEtNDgxMX5kYXRhc2V0PVVTQV9QQUZ-Zm9ybWF0aWQ9NDE4YzljNjktYjMxMy00NjRmLWI1N2MtZDNmYmEzYWU3NDEwX1U0MF8yNF8wXzBfMD0xODIxfnFsPTE5fmdlbz0w",
+        "county": "Hillsborough"
+    },
+    "tax": 199.73
+}

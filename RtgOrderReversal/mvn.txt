@@ -1,0 +1,9 @@
+
+--- run this command to build and create jar file.
+mvn clean package -DskipTests -Denv=cloud
+
+Environment commands:
+
+echo $ACTIVE_ENVIRONMENT
+export ACTIVE_ENVIRONMENT=dev
+

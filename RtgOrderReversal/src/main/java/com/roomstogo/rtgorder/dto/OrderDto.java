@@ -1,0 +1,101 @@
+
+/**
+ * OrderDto
+ */
+package com.roomstogo.rtgorder.dto;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.roomstogo.rtgorder.dto.calendar.SplitCalendar;
+import com.roomstogo.rtgorder.dto.orderresponse.OrderCreationResponse;
+import com.roomstogo.rtgorder.dto.packsafe.PactSafe;
+import com.roomstogo.rtgorder.dto.paymentinfo.PaymentInfo;
+import lombok.Data;
+
+import java.lang.annotation.Inherited;
+import java.util.List;
+
+import org.springframework.data.mongodb.core.mapping.Document;
+
+import org.springframework.data.annotation.Id;
+
+@Data
+@Document(collection = "orders")
+public class OrderDto {
+
+
+    public OrderDto() {
+    }
+
+
+    @Id
+    private String id;
+//    private String _id;   was renamed in new  order.json file
+    private String orderId;
+//    private boolean authorized; not found in new  order.json file
+    private boolean IsPickup;
+    private boolean IsExpress;
+    private boolean submitted;
+    private boolean shouldCombineUPSWithTruck;
+    private boolean doorwayDelivery;
+    private boolean doorwayDeliveryPossible;
+    private boolean emailSubscribed;
+    private boolean defaultDelivery;        // new in order.json
+    private boolean defaultTax;
+    private List<LineItems> lineItems;
+
+//    private CreatedAt createdAt;
+    private String createdAt;               // new - was an object, now a string
+
+//    private LastModified lastModified;
+    private String lastModified;            // new - was an object, now a string
+
+    private int __v;                        // not sure if this is used anymore... leave for now.
+    private String calendarType;
+
+    @JsonProperty("dDeliveryCharge")
+    private double dDeliveryCharge;
+    private String division;
+    private double doorwayDeliveryCharge;
+
+    @JsonProperty("kDeliveryCharge")
+    private double kDeliveryCharge;
+
+    private List<PaymentInfo> paymentInfo;
+
+    private List<String> deliveryCalendar;  // new in order.json
+    private List<String> pickupCalendar;    // new in order.json
+    private List<SplitCalendar> splitCalendar;     // new in orders.json
+
+    private String pickupWarehouse;
+    private Promotions promotions;
+    private double subtotal;
+    private double subtotalWithDelivery;
+    private double tentativeDeliveryCharge;
+    private double total;
+    private double totalDeliveryCharge;
+    private PactSafe pactSafe;              // new
+    private Contact contact;
+    private String deliveryDate;
+    private boolean deliveryTexts;
+    private int distributionIndex;
+    private boolean emailCampaign;
+    private List<String> expressCalendar;       // not in orders.json - need  to find out if it is used anymore
+    private String expressDeliveryDate;
+    private ShippingAddress shippingAddress;
+    private double tax;
+
+    private String cybersourcev2Token;
+    private double amountDue;
+    private String browserIP;
+
+    private OrderCreationResponse orderCreationResponse;
+
+    private String referrer;
+    private String session;
+    private String source;
+    private String submissionResponseCode;
+    private String submissionResponseMessage;
+    private String submittedAt;
+    private String userAgent;
+
+}

@@ -1,0 +1,1280 @@
+
+
+
+public class RTGOrder {
+
+
+public class ChildItems
+{
+   private String sku;
+
+   private int quantity;
+
+   private String price;
+
+   private String title;
+
+   private WarrantyPrice warrantyPrice;
+
+   public void setSku(String sku){
+       this.sku = sku;
+   }
+   public String getSku(){
+       return this.sku;
+   }
+   public void setQuantity(int quantity){
+       this.quantity = quantity;
+   }
+   public int getQuantity(){
+       return this.quantity;
+   }
+   public void setPrice(String price){
+       this.price = price;
+   }
+   public String getPrice(){
+       return this.price;
+   }
+   public void setTitle(String title){
+       this.title = title;
+   }
+   public String getTitle(){
+       return this.title;
+   }
+   public void setWarrantyPrice(WarrantyPrice warrantyPrice){
+       this.warrantyPrice = warrantyPrice;
+   }
+   public WarrantyPrice getWarrantyPrice(){
+       return this.warrantyPrice;
+   }
+}
+
+
+public class WarrantyPrice
+{
+   private double price;
+
+   private String provider;
+
+   private String planName;
+
+   public void setPrice(double price){
+       this.price = price;
+   }
+   public double getPrice(){
+       return this.price;
+   }
+   public void setProvider(String provider){
+       this.provider = provider;
+   }
+   public String getProvider(){
+       return this.provider;
+   }
+   public void setPlanName(String planName){
+       this.planName = planName;
+   }
+   public String getPlanName(){
+       return this.planName;
+   }
+}
+
+
+import java.util.ArrayList;
+import java.util.List;
+public class LineItems
+{
+   private boolean warrantyEnabled;
+
+   private List<String> uvSequenceNumber;
+
+   private boolean isStoreSku;
+
+   private String sku;
+
+   private int quantity;
+
+   private int unitPrice;
+
+   private String title;
+
+   private String deliveryType;
+
+   private String category;
+
+   private boolean on_promotion;
+
+   private List<ChildItems> childItems;
+
+   private WarrantyPrice warrantyPrice;
+
+   public void setWarrantyEnabled(boolean warrantyEnabled){
+       this.warrantyEnabled = warrantyEnabled;
+   }
+   public boolean getWarrantyEnabled(){
+       return this.warrantyEnabled;
+   }
+   public void setUvSequenceNumber(List<String> uvSequenceNumber){
+       this.uvSequenceNumber = uvSequenceNumber;
+   }
+   public List<String> getUvSequenceNumber(){
+       return this.uvSequenceNumber;
+   }
+   public void setIsStoreSku(boolean isStoreSku){
+       this.isStoreSku = isStoreSku;
+   }
+   public boolean getIsStoreSku(){
+       return this.isStoreSku;
+   }
+   public void setSku(String sku){
+       this.sku = sku;
+   }
+   public String getSku(){
+       return this.sku;
+   }
+   public void setQuantity(int quantity){
+       this.quantity = quantity;
+   }
+   public int getQuantity(){
+       return this.quantity;
+   }
+   public void setUnitPrice(int unitPrice){
+       this.unitPrice = unitPrice;
+   }
+   public int getUnitPrice(){
+       return this.unitPrice;
+   }
+   public void setTitle(String title){
+       this.title = title;
+   }
+   public String getTitle(){
+       return this.title;
+   }
+   public void setDeliveryType(String deliveryType){
+       this.deliveryType = deliveryType;
+   }
+   public String getDeliveryType(){
+       return this.deliveryType;
+   }
+   public void setCategory(String category){
+       this.category = category;
+   }
+   public String getCategory(){
+       return this.category;
+   }
+   public void setOn_promotion(boolean on_promotion){
+       this.on_promotion = on_promotion;
+   }
+   public boolean getOn_promotion(){
+       return this.on_promotion;
+   }
+   public void setChildItems(List<ChildItems> childItems){
+       this.childItems = childItems;
+   }
+   public List<ChildItems> getChildItems(){
+       return this.childItems;
+   }
+   public void setWarrantyPrice(WarrantyPrice warrantyPrice){
+       this.warrantyPrice = warrantyPrice;
+   }
+   public WarrantyPrice getWarrantyPrice(){
+       return this.warrantyPrice;
+   }
+}
+
+
+public class CreatedAt
+{
+   private String $date;
+
+   public void set$date(String $date){
+       this.$date = $date;
+   }
+   public String get$date(){
+       return this.$date;
+   }
+}
+
+
+public class LastModified
+{
+   private String $date;
+
+   public void set$date(String $date){
+       this.$date = $date;
+   }
+   public String get$date(){
+       return this.$date;
+   }
+}
+
+
+public class Card
+{
+   private String cardName;
+
+   private String cardType;
+
+   public void setCardName(String cardName){
+       this.cardName = cardName;
+   }
+   public String getCardName(){
+       return this.cardName;
+   }
+   public void setCardType(String cardType){
+       this.cardType = cardType;
+   }
+   public String getCardType(){
+       return this.cardType;
+   }
+}
+
+
+public class PurchaseTotals
+{
+   private String currency;
+
+   public void setCurrency(String currency){
+       this.currency = currency;
+   }
+   public String getCurrency(){
+       return this.currency;
+   }
+}
+
+
+public class CcAuthReply
+{
+   private int reasonCode;
+
+   private String amount;
+
+   private String authorizationCode;
+
+   private String avsCode;
+
+   private String avsCodeRaw;
+
+   private String paymentNetworkTransactionID;
+
+   private String authorizedDateTime;
+
+   private String processorResponse;
+
+   private String reconciliationID;
+
+   public void setReasonCode(int reasonCode){
+       this.reasonCode = reasonCode;
+   }
+   public int getReasonCode(){
+       return this.reasonCode;
+   }
+   public void setAmount(String amount){
+       this.amount = amount;
+   }
+   public String getAmount(){
+       return this.amount;
+   }
+   public void setAuthorizationCode(String authorizationCode){
+       this.authorizationCode = authorizationCode;
+   }
+   public String getAuthorizationCode(){
+       return this.authorizationCode;
+   }
+   public void setAvsCode(String avsCode){
+       this.avsCode = avsCode;
+   }
+   public String getAvsCode(){
+       return this.avsCode;
+   }
+   public void setAvsCodeRaw(String avsCodeRaw){
+       this.avsCodeRaw = avsCodeRaw;
+   }
+   public String getAvsCodeRaw(){
+       return this.avsCodeRaw;
+   }
+   public void setPaymentNetworkTransactionID(String paymentNetworkTransactionID){
+       this.paymentNetworkTransactionID = paymentNetworkTransactionID;
+   }
+   public String getPaymentNetworkTransactionID(){
+       return this.paymentNetworkTransactionID;
+   }
+   public void setAuthorizedDateTime(String authorizedDateTime){
+       this.authorizedDateTime = authorizedDateTime;
+   }
+   public String getAuthorizedDateTime(){
+       return this.authorizedDateTime;
+   }
+   public void setProcessorResponse(String processorResponse){
+       this.processorResponse = processorResponse;
+   }
+   public String getProcessorResponse(){
+       return this.processorResponse;
+   }
+   public void setReconciliationID(String reconciliationID){
+       this.reconciliationID = reconciliationID;
+   }
+   public String getReconciliationID(){
+       return this.reconciliationID;
+   }
+}
+
+
+public class AfsReply
+{
+   private int reasonCode;
+
+   private String consumerLocalTime;
+
+   private String scoreModelUsed;
+
+   private int afsResult;
+
+   private String cardBin;
+
+   private String binCountry;
+
+   private String cardAccountType;
+
+   private String cardScheme;
+
+   private String cardIssuer;
+
+   public void setReasonCode(int reasonCode){
+       this.reasonCode = reasonCode;
+   }
+   public int getReasonCode(){
+       return this.reasonCode;
+   }
+   public void setConsumerLocalTime(String consumerLocalTime){
+       this.consumerLocalTime = consumerLocalTime;
+   }
+   public String getConsumerLocalTime(){
+       return this.consumerLocalTime;
+   }
+   public void setScoreModelUsed(String scoreModelUsed){
+       this.scoreModelUsed = scoreModelUsed;
+   }
+   public String getScoreModelUsed(){
+       return this.scoreModelUsed;
+   }
+   public void setAfsResult(int afsResult){
+       this.afsResult = afsResult;
+   }
+   public int getAfsResult(){
+       return this.afsResult;
+   }
+   public void setCardBin(String cardBin){
+       this.cardBin = cardBin;
+   }
+   public String getCardBin(){
+       return this.cardBin;
+   }
+   public void setBinCountry(String binCountry){
+       this.binCountry = binCountry;
+   }
+   public String getBinCountry(){
+       return this.binCountry;
+   }
+   public void setCardAccountType(String cardAccountType){
+       this.cardAccountType = cardAccountType;
+   }
+   public String getCardAccountType(){
+       return this.cardAccountType;
+   }
+   public void setCardScheme(String cardScheme){
+       this.cardScheme = cardScheme;
+   }
+   public String getCardScheme(){
+       return this.cardScheme;
+   }
+   public void setCardIssuer(String cardIssuer){
+       this.cardIssuer = cardIssuer;
+   }
+   public String getCardIssuer(){
+       return this.cardIssuer;
+   }
+}
+
+
+public class Card
+{
+   private String cardType;
+
+   public void setCardType(String cardType){
+       this.cardType = cardType;
+   }
+   public String getCardType(){
+       return this.cardType;
+   }
+}
+
+
+public class RecurringSubscriptionInfo
+{
+   private String subscriptionID;
+
+   public void setSubscriptionID(String subscriptionID){
+       this.subscriptionID = subscriptionID;
+   }
+   public String getSubscriptionID(){
+       return this.subscriptionID;
+   }
+}
+
+
+public class Body
+{
+   private String merchantReferenceCode;
+
+   private String requestID;
+
+   private String decision;
+
+   private int reasonCode;
+
+   private String requestToken;
+
+   private PurchaseTotals purchaseTotals;
+
+   private CcAuthReply ccAuthReply;
+
+   private AfsReply afsReply;
+
+   private Card card;
+
+   private RecurringSubscriptionInfo recurringSubscriptionInfo;
+
+   public void setMerchantReferenceCode(String merchantReferenceCode){
+       this.merchantReferenceCode = merchantReferenceCode;
+   }
+   public String getMerchantReferenceCode(){
+       return this.merchantReferenceCode;
+   }
+   public void setRequestID(String requestID){
+       this.requestID = requestID;
+   }
+   public String getRequestID(){
+       return this.requestID;
+   }
+   public void setDecision(String decision){
+       this.decision = decision;
+   }
+   public String getDecision(){
+       return this.decision;
+   }
+   public void setReasonCode(int reasonCode){
+       this.reasonCode = reasonCode;
+   }
+   public int getReasonCode(){
+       return this.reasonCode;
+   }
+   public void setRequestToken(String requestToken){
+       this.requestToken = requestToken;
+   }
+   public String getRequestToken(){
+       return this.requestToken;
+   }
+   public void setPurchaseTotals(PurchaseTotals purchaseTotals){
+       this.purchaseTotals = purchaseTotals;
+   }
+   public PurchaseTotals getPurchaseTotals(){
+       return this.purchaseTotals;
+   }
+   public void setCcAuthReply(CcAuthReply ccAuthReply){
+       this.ccAuthReply = ccAuthReply;
+   }
+   public CcAuthReply getCcAuthReply(){
+       return this.ccAuthReply;
+   }
+   public void setAfsReply(AfsReply afsReply){
+       this.afsReply = afsReply;
+   }
+   public AfsReply getAfsReply(){
+       return this.afsReply;
+   }
+   public void setCard(Card card){
+       this.card = card;
+   }
+   public Card getCard(){
+       return this.card;
+   }
+   public void setRecurringSubscriptionInfo(RecurringSubscriptionInfo recurringSubscriptionInfo){
+       this.recurringSubscriptionInfo = recurringSubscriptionInfo;
+   }
+   public RecurringSubscriptionInfo getRecurringSubscriptionInfo(){
+       return this.recurringSubscriptionInfo;
+   }
+}
+
+
+public class PaymentProperties
+{
+   private String token;
+
+   private Card card;
+
+   private Body body;
+
+   private int reasonCode;
+
+   private String status;
+
+   public void setToken(String token){
+       this.token = token;
+   }
+   public String getToken(){
+       return this.token;
+   }
+   public void setCard(Card card){
+       this.card = card;
+   }
+   public Card getCard(){
+       return this.card;
+   }
+   public void setBody(Body body){
+       this.body = body;
+   }
+   public Body getBody(){
+       return this.body;
+   }
+   public void setReasonCode(int reasonCode){
+       this.reasonCode = reasonCode;
+   }
+   public int getReasonCode(){
+       return this.reasonCode;
+   }
+   public void setStatus(String status){
+       this.status = status;
+   }
+   public String getStatus(){
+       return this.status;
+   }
+}
+
+public class PaymentInfo
+{
+   private boolean authorized;
+
+   private String paymentType;
+
+   private PaymentProperties paymentProperties;
+
+   private double authorizedAmount;
+
+   public void setAuthorized(boolean authorized){
+       this.authorized = authorized;
+   }
+   public boolean getAuthorized(){
+       return this.authorized;
+   }
+   public void setPaymentType(String paymentType){
+       this.paymentType = paymentType;
+   }
+   public String getPaymentType(){
+       return this.paymentType;
+   }
+   public void setPaymentProperties(PaymentProperties paymentProperties){
+       this.paymentProperties = paymentProperties;
+   }
+   public PaymentProperties getPaymentProperties(){
+       return this.paymentProperties;
+   }
+   public void setAuthorizedAmount(double authorizedAmount){
+       this.authorizedAmount = authorizedAmount;
+   }
+   public double getAuthorizedAmount(){
+       return this.authorizedAmount;
+   }
+}
+
+
+public class WarrantyPrice
+{
+   private double price;
+
+   private String provider_name;
+
+   private String plan_name;
+
+   public void setPrice(double price){
+       this.price = price;
+   }
+   public double getPrice(){
+       return this.price;
+   }
+   public void setProvider_name(String provider_name){
+       this.provider_name = provider_name;
+   }
+   public String getProvider_name(){
+       return this.provider_name;
+   }
+   public void setPlan_name(String plan_name){
+       this.plan_name = plan_name;
+   }
+   public String getPlan_name(){
+       return this.plan_name;
+   }
+}
+
+
+public class ChildItems
+{
+   private String sku;
+
+   private int quantity;
+
+   private String price;
+
+   private String title;
+
+   private WarrantyPrice warrantyPrice;
+
+   public void setSku(String sku){
+       this.sku = sku;
+   }
+   public String getSku(){
+       return this.sku;
+   }
+   public void setQuantity(int quantity){
+       this.quantity = quantity;
+   }
+   public int getQuantity(){
+       return this.quantity;
+   }
+   public void setPrice(String price){
+       this.price = price;
+   }
+   public String getPrice(){
+       return this.price;
+   }
+   public void setTitle(String title){
+       this.title = title;
+   }
+   public String getTitle(){
+       return this.title;
+   }
+   public void setWarrantyPrice(WarrantyPrice warrantyPrice){
+       this.warrantyPrice = warrantyPrice;
+   }
+   public WarrantyPrice getWarrantyPrice(){
+       return this.warrantyPrice;
+   }
+}
+
+
+public class WarrantyPrice
+{
+   private double price;
+
+   private String provider;
+
+   private String planName;
+
+   public void setPrice(double price){
+       this.price = price;
+   }
+   public double getPrice(){
+       return this.price;
+   }
+   public void setProvider(String provider){
+       this.provider = provider;
+   }
+   public String getProvider(){
+       return this.provider;
+   }
+   public void setPlanName(String planName){
+       this.planName = planName;
+   }
+   public String getPlanName(){
+       return this.planName;
+   }
+}
+
+
+import java.util.ArrayList;
+import java.util.List;
+public class LineItems
+{
+   private String sku;
+
+   private int quantity;
+
+   private int unitPrice;
+
+   private String title;
+
+   private String deliveryType;
+
+   private String category;
+
+   private List<String> uvSequenceNumber;
+
+   private String type;
+
+   private boolean on_promotion;
+
+   private List<ChildItems> childItems;
+
+   private boolean warrantyEnabled;
+
+   private WarrantyPrice warrantyPrice;
+
+   public void setSku(String sku){
+       this.sku = sku;
+   }
+   public String getSku(){
+       return this.sku;
+   }
+   public void setQuantity(int quantity){
+       this.quantity = quantity;
+   }
+   public int getQuantity(){
+       return this.quantity;
+   }
+   public void setUnitPrice(int unitPrice){
+       this.unitPrice = unitPrice;
+   }
+   public int getUnitPrice(){
+       return this.unitPrice;
+   }
+   public void setTitle(String title){
+       this.title = title;
+   }
+   public String getTitle(){
+       return this.title;
+   }
+   public void setDeliveryType(String deliveryType){
+       this.deliveryType = deliveryType;
+   }
+   public String getDeliveryType(){
+       return this.deliveryType;
+   }
+   public void setCategory(String category){
+       this.category = category;
+   }
+   public String getCategory(){
+       return this.category;
+   }
+   public void setUvSequenceNumber(List<String> uvSequenceNumber){
+       this.uvSequenceNumber = uvSequenceNumber;
+   }
+   public List<String> getUvSequenceNumber(){
+       return this.uvSequenceNumber;
+   }
+   public void setType(String type){
+       this.type = type;
+   }
+   public String getType(){
+       return this.type;
+   }
+   public void setOn_promotion(boolean on_promotion){
+       this.on_promotion = on_promotion;
+   }
+   public boolean getOn_promotion(){
+       return this.on_promotion;
+   }
+   public void setChildItems(List<ChildItems> childItems){
+       this.childItems = childItems;
+   }
+   public List<ChildItems> getChildItems(){
+       return this.childItems;
+   }
+   public void setWarrantyEnabled(boolean warrantyEnabled){
+       this.warrantyEnabled = warrantyEnabled;
+   }
+   public boolean getWarrantyEnabled(){
+       return this.warrantyEnabled;
+   }
+   public void setWarrantyPrice(WarrantyPrice warrantyPrice){
+       this.warrantyPrice = warrantyPrice;
+   }
+   public WarrantyPrice getWarrantyPrice(){
+       return this.warrantyPrice;
+   }
+}
+
+
+import java.util.ArrayList;
+import java.util.List;
+public class Promotions
+{
+   private int cartTotal;
+
+   private double listPriceTotal;
+
+   private int salePriceTotal;
+
+   private int bonusBuyTotal;
+
+   private int totalSavings;
+
+   private List<LineItems> lineItems;
+
+   private List<String> promotions;
+
+   private List<String> amountPromotions;
+
+   public void setCartTotal(int cartTotal){
+       this.cartTotal = cartTotal;
+   }
+   public int getCartTotal(){
+       return this.cartTotal;
+   }
+   public void setListPriceTotal(double listPriceTotal){
+       this.listPriceTotal = listPriceTotal;
+   }
+   public double getListPriceTotal(){
+       return this.listPriceTotal;
+   }
+   public void setSalePriceTotal(int salePriceTotal){
+       this.salePriceTotal = salePriceTotal;
+   }
+   public int getSalePriceTotal(){
+       return this.salePriceTotal;
+   }
+   public void setBonusBuyTotal(int bonusBuyTotal){
+       this.bonusBuyTotal = bonusBuyTotal;
+   }
+   public int getBonusBuyTotal(){
+       return this.bonusBuyTotal;
+   }
+   public void setTotalSavings(int totalSavings){
+       this.totalSavings = totalSavings;
+   }
+   public int getTotalSavings(){
+       return this.totalSavings;
+   }
+   public void setLineItems(List<LineItems> lineItems){
+       this.lineItems = lineItems;
+   }
+   public List<LineItems> getLineItems(){
+       return this.lineItems;
+   }
+   public void setPromotions(List<String> promotions){
+       this.promotions = promotions;
+   }
+   public List<String> getPromotions(){
+       return this.promotions;
+   }
+   public void setAmountPromotions(List<String> amountPromotions){
+       this.amountPromotions = amountPromotions;
+   }
+   public List<String> getAmountPromotions(){
+       return this.amountPromotions;
+   }
+}
+
+
+public class Contact
+{
+   private String firstName;
+
+   private String lastName;
+
+   private String email;
+
+   private String phone;
+
+   private String altPhone;
+
+   public void setFirstName(String firstName){
+       this.firstName = firstName;
+   }
+   public String getFirstName(){
+       return this.firstName;
+   }
+   public void setLastName(String lastName){
+       this.lastName = lastName;
+   }
+   public String getLastName(){
+       return this.lastName;
+   }
+   public void setEmail(String email){
+       this.email = email;
+   }
+   public String getEmail(){
+       return this.email;
+   }
+   public void setPhone(String phone){
+       this.phone = phone;
+   }
+   public String getPhone(){
+       return this.phone;
+   }
+   public void setAltPhone(String altPhone){
+       this.altPhone = altPhone;
+   }
+   public String getAltPhone(){
+       return this.altPhone;
+   }
+}
+
+
+public class ShippingAddress
+{
+   private String address1;
+
+   private String address2;
+
+   private String city;
+
+   private String state;
+
+   private String zip;
+
+   private String country_code;
+
+   private boolean addressLookupSuccess;
+
+   private String globalAddressId;
+
+   private String county;
+
+   public void setAddress1(String address1){
+       this.address1 = address1;
+   }
+   public String getAddress1(){
+       return this.address1;
+   }
+   public void setAddress2(String address2){
+       this.address2 = address2;
+   }
+   public String getAddress2(){
+       return this.address2;
+   }
+   public void setCity(String city){
+       this.city = city;
+   }
+   public String getCity(){
+       return this.city;
+   }
+   public void setState(String state){
+       this.state = state;
+   }
+   public String getState(){
+       return this.state;
+   }
+   public void setZip(String zip){
+       this.zip = zip;
+   }
+   public String getZip(){
+       return this.zip;
+   }
+   public void setCountry_code(String country_code){
+       this.country_code = country_code;
+   }
+   public String getCountry_code(){
+       return this.country_code;
+   }
+   public void setAddressLookupSuccess(boolean addressLookupSuccess){
+       this.addressLookupSuccess = addressLookupSuccess;
+   }
+   public boolean getAddressLookupSuccess(){
+       return this.addressLookupSuccess;
+   }
+   public void setGlobalAddressId(String globalAddressId){
+       this.globalAddressId = globalAddressId;
+   }
+   public String getGlobalAddressId(){
+       return this.globalAddressId;
+   }
+   public void setCounty(String county){
+       this.county = county;
+   }
+   public String getCounty(){
+       return this.county;
+   }
+}
+
+
+import java.util.ArrayList;
+import java.util.List;
+public class Root
+{
+   private String _id;
+
+   private boolean authorized;
+
+   private boolean isPickup;
+
+   private boolean isExpress;
+
+   private boolean submitted;
+
+   private boolean shouldCombineUPSWithTruck;
+
+   private boolean doorwayDelivery;
+
+   private boolean doorwayDeliveryPossible;
+
+   private boolean emailSubscribed;
+
+   private List<LineItems> lineItems;
+
+   private CreatedAt createdAt;
+
+   private LastModified lastModified;
+
+   private int __v;
+
+   private String calendarType;
+
+   private int dDeliveryCharge;
+
+   private String division;
+
+   private double doorwayDeliveryCharge;
+
+   private int kDeliveryCharge;
+
+   private List<PaymentInfo> paymentInfo;
+
+   private String pickupWarehouse;
+
+   private Promotions promotions;
+
+   private double subtotal;
+
+   private double subtotalWithDelivery;
+
+   private double tentativeDeliveryCharge;
+
+   private double total;
+
+   private double totalDeliveryCharge;
+
+   private Contact contact;
+
+   private DateTime deliveryDate;
+
+   private boolean deliveryTexts;
+
+   private int distributionIndex;
+
+   private boolean emailCampaign;
+
+   private List<DateTime> expressCalendar;
+
+   private DateTime expressDeliveryDate;
+
+   private ShippingAddress shippingAddress;
+
+   private double tax;
+
+   public void set_id(String _id){
+       this._id = _id;
+   }
+   public String get_id(){
+       return this._id;
+   }
+   public void setAuthorized(boolean authorized){
+       this.authorized = authorized;
+   }
+   public boolean getAuthorized(){
+       return this.authorized;
+   }
+   public void setIsPickup(boolean isPickup){
+       this.isPickup = isPickup;
+   }
+   public boolean getIsPickup(){
+       return this.isPickup;
+   }
+   public void setIsExpress(boolean isExpress){
+       this.isExpress = isExpress;
+   }
+   public boolean getIsExpress(){
+       return this.isExpress;
+   }
+   public void setSubmitted(boolean submitted){
+       this.submitted = submitted;
+   }
+   public boolean getSubmitted(){
+       return this.submitted;
+   }
+   public void setShouldCombineUPSWithTruck(boolean shouldCombineUPSWithTruck){
+       this.shouldCombineUPSWithTruck = shouldCombineUPSWithTruck;
+   }
+   public boolean getShouldCombineUPSWithTruck(){
+       return this.shouldCombineUPSWithTruck;
+   }
+   public void setDoorwayDelivery(boolean doorwayDelivery){
+       this.doorwayDelivery = doorwayDelivery;
+   }
+   public boolean getDoorwayDelivery(){
+       return this.doorwayDelivery;
+   }
+   public void setDoorwayDeliveryPossible(boolean doorwayDeliveryPossible){
+       this.doorwayDeliveryPossible = doorwayDeliveryPossible;
+   }
+   public boolean getDoorwayDeliveryPossible(){
+       return this.doorwayDeliveryPossible;
+   }
+   public void setEmailSubscribed(boolean emailSubscribed){
+       this.emailSubscribed = emailSubscribed;
+   }
+   public boolean getEmailSubscribed(){
+       return this.emailSubscribed;
+   }
+   public void setLineItems(List<LineItems> lineItems){
+       this.lineItems = lineItems;
+   }
+   public List<LineItems> getLineItems(){
+       return this.lineItems;
+   }
+   public void setCreatedAt(CreatedAt createdAt){
+       this.createdAt = createdAt;
+   }
+   public CreatedAt getCreatedAt(){
+       return this.createdAt;
+   }
+   public void setLastModified(LastModified lastModified){
+       this.lastModified = lastModified;
+   }
+   public LastModified getLastModified(){
+       return this.lastModified;
+   }
+   public void set__v(int __v){
+       this.__v = __v;
+   }
+   public int get__v(){
+       return this.__v;
+   }
+   public void setCalendarType(String calendarType){
+       this.calendarType = calendarType;
+   }
+   public String getCalendarType(){
+       return this.calendarType;
+   }
+   public void setDDeliveryCharge(int dDeliveryCharge){
+       this.dDeliveryCharge = dDeliveryCharge;
+   }
+   public int getDDeliveryCharge(){
+       return this.dDeliveryCharge;
+   }
+   public void setDivision(String division){
+       this.division = division;
+   }
+   public String getDivision(){
+       return this.division;
+   }
+   public void setDoorwayDeliveryCharge(double doorwayDeliveryCharge){
+       this.doorwayDeliveryCharge = doorwayDeliveryCharge;
+   }
+   public double getDoorwayDeliveryCharge(){
+       return this.doorwayDeliveryCharge;
+   }
+   public void setKDeliveryCharge(int kDeliveryCharge){
+       this.kDeliveryCharge = kDeliveryCharge;
+   }
+   public int getKDeliveryCharge(){
+       return this.kDeliveryCharge;
+   }
+   public void setPaymentInfo(List<PaymentInfo> paymentInfo){
+       this.paymentInfo = paymentInfo;
+   }
+   public List<PaymentInfo> getPaymentInfo(){
+       return this.paymentInfo;
+   }
+   public void setPickupWarehouse(String pickupWarehouse){
+       this.pickupWarehouse = pickupWarehouse;
+   }
+   public String getPickupWarehouse(){
+       return this.pickupWarehouse;
+   }
+   public void setPromotions(Promotions promotions){
+       this.promotions = promotions;
+   }
+   public Promotions getPromotions(){
+       return this.promotions;
+   }
+   public void setSubtotal(double subtotal){
+       this.subtotal = subtotal;
+   }
+   public double getSubtotal(){
+       return this.subtotal;
+   }
+   public void setSubtotalWithDelivery(double subtotalWithDelivery){
+       this.subtotalWithDelivery = subtotalWithDelivery;
+   }
+   public double getSubtotalWithDelivery(){
+       return this.subtotalWithDelivery;
+   }
+   public void setTentativeDeliveryCharge(double tentativeDeliveryCharge){
+       this.tentativeDeliveryCharge = tentativeDeliveryCharge;
+   }
+   public double getTentativeDeliveryCharge(){
+       return this.tentativeDeliveryCharge;
+   }
+   public void setTotal(double total){
+       this.total = total;
+   }
+   public double getTotal(){
+       return this.total;
+   }
+   public void setTotalDeliveryCharge(double totalDeliveryCharge){
+       this.totalDeliveryCharge = totalDeliveryCharge;
+   }
+   public double getTotalDeliveryCharge(){
+       return this.totalDeliveryCharge;
+   }
+   public void setContact(Contact contact){
+       this.contact = contact;
+   }
+   public Contact getContact(){
+       return this.contact;
+   }
+   public void setDeliveryDate(DateTime deliveryDate){
+       this.deliveryDate = deliveryDate;
+   }
+   public DateTime getDeliveryDate(){
+       return this.deliveryDate;
+   }
+   public void setDeliveryTexts(boolean deliveryTexts){
+       this.deliveryTexts = deliveryTexts;
+   }
+   public boolean getDeliveryTexts(){
+       return this.deliveryTexts;
+   }
+   public void setDistributionIndex(int distributionIndex){
+       this.distributionIndex = distributionIndex;
+   }
+   public int getDistributionIndex(){
+       return this.distributionIndex;
+   }
+   public void setEmailCampaign(boolean emailCampaign){
+       this.emailCampaign = emailCampaign;
+   }
+   public boolean getEmailCampaign(){
+       return this.emailCampaign;
+   }
+   public void setExpressCalendar(List<DateTime> expressCalendar){
+       this.expressCalendar = expressCalendar;
+   }
+   public List<DateTime> getExpressCalendar(){
+       return this.expressCalendar;
+   }
+   public void setExpressDeliveryDate(DateTime expressDeliveryDate){
+       this.expressDeliveryDate = expressDeliveryDate;
+   }
+   public DateTime getExpressDeliveryDate(){
+       return this.expressDeliveryDate;
+   }
+   public void setShippingAddress(ShippingAddress shippingAddress){
+       this.shippingAddress = shippingAddress;
+   }
+   public ShippingAddress getShippingAddress(){
+       return this.shippingAddress;
+   }
+   public void setTax(double tax){
+       this.tax = tax;
+   }
+   public double getTax(){
+       return this.tax;
+   }
+}
+
+
+// sqldata1:/var/opt/mssql
+
+// docker run --name 'sql19' -v sqldata1:/var/opt/mssql --rm -it -d -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=Dumb@Passw0rd" -p 1433:1433/tcp mcr.microsoft.com/mssql/server:2019-latest
+
+// docker run --name 'sql19' -e 'ACCEPT_EULA=Y' -e 'MSSQL_SA_PASSWORD=Dumb@Passw0rd' -p 1433:1433 -v sqlserver-volume:/var/opt/mssql -d mcr.microsoft.com/mssql/server:2019-latest
