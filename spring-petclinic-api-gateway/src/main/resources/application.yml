@@ -23,3 +23,9 @@ spring:
             - Path=/api/customer/**
           filters:
             - StripPrefix=2
+        - id: reversal-service
+            uri: http://reversal-service
+            predicates:
+              - Path=/api/reversal/**
+            filters:
+              - StripPrefix=2
